@@ -15,7 +15,7 @@ Developed by: Dr. Frederick Vaz, Department of Community Medicine, Goa Medical C
 
 ## How to Use
 
-1. Enter the Consumer Price Index (CPI-IW) value in the provided input field.
+1. Enter the Consumer Price Index (CPI-IW) value in the provided input field. The CPI-IW may be obtained from https://labourbureau.gov.in/.
 2. Select the month and year for which the CPI is applicable.
 3. Click on the "Update BG Prasad Socioeconomic Scale" button to calculate the updated scale.
 4. The updated BG Prasad Socio-economic Scale will be displayed.
