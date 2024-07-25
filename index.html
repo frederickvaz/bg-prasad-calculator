@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Prasad Socio-economic Status Scale Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 16px;
+        }
+        input, select, button {
+            display: block;
+            width: calc(100% - 22px);
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        #result, #classResult {
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .developer-label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BG Prasad Socio-economic Status Scale Calculator</h1>
+    <p class="developer-label">Developed by: Dr. Frederick Vaz, Department of Community Medicine, Goa Medical College, Goa</p>
+    <form id="bgPrasadForm">
+        <label for="cpi">Enter Consumer Price Index (CPI-IW):</label>
+        <input type="number" id="cpi" required>
+        <br>
+        <label for="month">Select Month:</label>
+        <select id="month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <br>
+        <label for="year">Select Year:</label>
+        <select id="year">
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+        <br>
+        <button type="button" onclick="calculateThresholds()">Update BG Prasad Socioeconomic Scale</button>
+    </form>
+    <div id="result"></div>
+    <br>
+    <label for="income">Enter Monthly Per Capita Income of the Family:</label>
+    <input type="number" id="income">
+    <button type="button" onclick="determineClass()">Determine BG Prasad Socio-economic Class for the Family</button>
+    <div id="classResult"></div>
+    <br>
+    <p>Give your Valuable Feedback to: Dr. Frederick Vaz, email: frederickvaz@rediffmail.com</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
