@@ -4,8 +4,8 @@ This project is a web application to calculate the BG Prasad Socio-economic Stat
 
 ## Features
 
-- Calculate the BG Prasad Socio-economic Status Scale based on the Consumer Price Index (CPI-IW).
-- Determine the socio-economic class for a family based on their monthly per capita income.
+- Calculates the BG Prasad Socio-economic Status Scale based on the Consumer Price Index (CPI-IW).
+- Determines the socio-economic class for a family based on their monthly per capita income.
 - User-friendly interface with input fields for CPI, month, year, and monthly income.
 - Displays updated BG Prasad Socio-economic Scale and the determined socio-economic class.
 
